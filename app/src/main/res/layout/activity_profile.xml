@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+
+    <TextView
+        android:id="@+id/viewWelSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="WELCOME..."
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorText"/>
+
+    <TextView
+        android:id="@+id/textEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="207dp"
+        android:text=""
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="314dp"
+        android:layout_height="159dp"
+        android:layout_below="@+id/viewWelSignIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textEmail"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter your name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editSurname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editName"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter your surname"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="160dp"
+        android:hint="Enter your address"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editAddress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-160dp"
+        android:hint="Enter your phone"
+        android:inputType="number"/>
+
+
+    <Button
+        android:id="@+id/buttonSaveInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonLogOut"
+        android:layout_centerHorizontal="true"
+        android:text="Save Information"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonLogOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Log Out"
+        android:layout_marginLeft="50dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
